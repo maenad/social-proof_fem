@@ -1,0 +1,297 @@
+@import url("https://fonts.googleapis.com/css2?family=Spartan:wght@400;500;700&display=swap");
+/*Primary*/
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box !important;
+          box-sizing: border-box !important;
+  font-family: "Spartan", sans-serif;
+}
+
+body {
+  font-size: 15px;
+}
+
+.container {
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container .flex-container {
+  width: 65%;
+}
+
+.container .flex-container .top {
+  height: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.container .flex-container .top .left {
+  width: 40%;
+}
+
+.container .flex-container .top .left h1 {
+  font-size: 3em;
+  color: #502050;
+}
+
+.container .flex-container .top .left p {
+  width: 92%;
+  color: #937b92;
+  margin-top: 0.5em;
+  font-weight: 500;
+}
+
+.container .flex-container .top .right {
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container .flex-container .top .right .rate {
+  padding: 1em;
+  margin: 0.5em 1em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 65%;
+  background-color: #f7f2f7;
+  border-radius: 0.5em;
+}
+
+.container .flex-container .top .right .rate .rating img {
+  margin-left: 0.3em;
+}
+
+.container .flex-container .top .right .rate .opinion {
+  text-align: left;
+  width: 50%;
+  font-size: 0.8em;
+  font-weight: 700;
+}
+
+.container .flex-container .top .right #rate-2 {
+  margin-left: 6em;
+}
+
+.container .flex-container .top .right #rate-3 {
+  margin-left: 12em;
+}
+
+.container .flex-container .bottom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  margin-top: 3em;
+}
+
+.container .flex-container .bottom .rating-card {
+  background-color: #502050;
+  width: 30%;
+  color: white;
+  margin: 0em 1em;
+  padding: 2em;
+  border-radius: 0.5em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.container .flex-container .bottom .rating-card .user {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 0.9em;
+  margin-bottom: 2em;
+}
+
+.container .flex-container .bottom .rating-card .user img {
+  border-radius: 50%;
+  width: 15%;
+  height: auto;
+}
+
+.container .flex-container .bottom .rating-card .user .user-info {
+  margin-left: 1em;
+}
+
+.container .flex-container .bottom .rating-card .user .user-info span {
+  font-weight: 500;
+  color: #ee68a4;
+}
+
+.container .flex-container .bottom .rating-card .review {
+  font-size: 0.9em;
+}
+
+.container .flex-container .bottom #card-2 {
+  margin-top: 3em;
+}
+
+.container .flex-container .bottom #card-3 {
+  margin-top: 6em;
+}
+
+@media (max-width: 1200px) {
+  .container {
+    margin: 0;
+    height: 100vh;
+  }
+  .flex-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 100% !important;
+  }
+  .flex-container .top {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 100% !important;
+    padding-top: 45em;
+  }
+  .flex-container .top .left {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 100% !important;
+    margin-bottom: 2em;
+  }
+  .flex-container .top .left h1 {
+    width: 100% !important;
+    text-align: center !important;
+    width: 90% !important;
+    font-size: 2.5em !important;
+  }
+  .flex-container .top .left p {
+    width: 100% !important;
+    text-align: center !important;
+    width: 90% !important;
+  }
+  .flex-container .top .right {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 100% !important;
+  }
+  .flex-container .top .right .rate {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 90% !important;
+    margin: 0em !important;
+    margin-top: .5em !important;
+  }
+  .flex-container .top .right .rate .rating {
+    width: 100% !important;
+    text-align: center;
+  }
+  .flex-container .top .right .rate .opinion {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 100% !important;
+    text-align: center !important;
+    margin-top: .5em;
+  }
+  .flex-container .bottom {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 100% !important;
+    margin-bottom: 5em;
+  }
+  .flex-container .bottom .rating-card {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-item-align: center !important;
+        align-self: center !important;
+    width: 90% !important;
+    margin: .5em 0em !important;
+  }
+}
+/*# sourceMappingURL=style.css.map */

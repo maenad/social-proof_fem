@@ -1,0 +1,222 @@
+@import "variables.scss";
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box !important;
+  font-family: "Spartan", sans-serif;
+}
+
+body {
+  font-size: 15px;
+}
+
+.container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .flex-container {
+    width: 65%;
+
+    .top {
+      height: 50%;
+      display: flex;
+      justify-content: space-between;
+
+      .left {
+        width: 40%;
+
+        h1 {
+          font-size: 3em;
+          color: $dark;
+        }
+        p {
+          width: 92%;
+          color: $paragraph;
+          margin-top: 0.5em;
+          font-weight: 500;
+        }
+      }
+      .right {
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: center;
+
+        .rate {
+          padding: 1em;
+          margin: 0.5em 1em;
+          display: flex;
+          justify-content: space-around;
+          align-items: center;
+          width: 65%;
+          background-color: $reviews;
+          border-radius: 0.5em;
+
+          .rating {
+            img {
+              margin-left: 0.3em;
+            }
+          }
+
+          .opinion {
+            text-align: left;
+            width: 50%;
+            font-size: 0.8em;
+            font-weight: 700;
+          }
+        }
+
+        #rate-2 {
+          margin-left: 6em;
+        }
+
+        #rate-3 {
+          margin-left: 12em;
+        }
+      }
+    }
+
+    .bottom {
+      display: flex;
+      align-items: flex-start;
+      margin-top: 3em;
+
+      .rating-card {
+        background-color: $dark;
+        width: 30%;
+        color: white;
+        margin: 0em 1em;
+        padding: 2em;
+        border-radius: 0.5em;
+        display: flex;
+        flex-direction: column;
+
+        .user {
+          display: flex;
+          align-items: center;
+          font-size: 0.9em;
+          margin-bottom: 2em;
+
+          img {
+            border-radius: 50%;
+            width: 15%;
+            height: auto;
+          }
+
+          .user-info {
+            margin-left: 1em;
+
+            span {
+              font-weight: 500;
+              color: $accent;
+            }
+          }
+        }
+        .review {
+          font-size: 0.9em;
+        }
+      }
+
+      #card-2 {
+        margin-top: 3em;
+      }
+
+      #card-3 {
+        margin-top: 6em;
+      }
+    }
+  }
+}
+
+@media (max-width: 1200px) {
+  .container {
+    margin: 0;
+    height: 100vh;
+  }
+  .flex-container {
+    display: flex;
+    flex-direction: column;
+    width: 100% !important;
+
+
+    .top {
+      display: flex;
+      flex-direction: column;
+      width: 100% !important;
+      padding-top: 45em;
+
+      .left {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100% !important;
+        margin-bottom: 2em;
+
+        h1 {
+          width: 100% !important;
+          text-align: center !important;
+          width: 90% !important;
+          font-size: 2.5em !important;
+
+
+        }
+        p {
+          width: 100% !important;
+                      text-align: center !important;
+
+                      width: 90% !important;
+
+        }
+      }
+      .right {
+        display: flex;
+        flex-direction: column;
+        width: 100% !important;
+
+        .rate {
+          display: flex;
+          flex-direction: column;
+          width: 90% !important;
+          margin: 0em !important;
+          margin-top: .5em !important;
+
+          .rating {
+            width: 100% !important;
+            text-align: center;
+          }
+          .opinion {
+            display: flex;
+            flex-direction: column;
+            width: 100% !important;
+            text-align: center !important;
+            margin-top: .5em;
+          }
+  
+        }
+      }
+    }
+
+    .bottom {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: 100% !important;
+      margin-bottom: 5em;
+
+      .rating-card {
+        display: flex;
+        flex-direction: column;
+        align-self: center !important;
+        width: 90% !important;
+        margin: .5em 0em !important;
+  
+      }
+    }
+  }
+}
